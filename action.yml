@@ -1,0 +1,22 @@
+name: 'Realtime DB Action'
+description: 'Connect as admin and execute commands in firebase realtime database'
+inputs:
+  CREDENTIAL:
+    description: 'JSON with service account configuration'
+    required: true
+  DATABASE_DEFAULT_URL:
+    description: 'URL to connect in default database'
+    required: true
+  REFERENCE:
+    description: 'Reference to access in database'
+    required: true
+  OPERATION:
+    description: 'The operation to be performed, which can be get or set'
+    required: true
+  DATA:
+    description: 'New data that will be used to update the reference'
+runs:
+  using: 'node16'
+  main: 'index.js'
+    
+  
