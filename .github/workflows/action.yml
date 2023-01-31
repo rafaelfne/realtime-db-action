@@ -10,7 +10,7 @@ jobs:
       - name: test set
         uses: rafacolab/realtime-db-action@v1.0.0
         with:
-          CREDENTIAL: ${{ secrets.CREDENTIAL_TEST }}
+          CREDENTIAL: '${{ secrets.CREDENTIAL_TEST }}'
           REFERENCE: '/test/user'
           DATA: "'{ name: 'Rafael Neves', age: 41 }'"
           OPERATION: set
