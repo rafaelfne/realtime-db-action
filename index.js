@@ -9,7 +9,7 @@ try {
     const data = JSON.parse(core.getInput('DATA'));
     const operation = core.getInput('OPERATION');
 
-    core.info(credential);
+    core.debug(credential);
 
     const app = admin.initializeApp({
         credential,
