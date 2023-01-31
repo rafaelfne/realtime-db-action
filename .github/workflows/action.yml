@@ -12,7 +12,7 @@ jobs:
         with:
           CREDENTIAL: ${{ secrets.CREDENTIAL_TEST }}
           REFERENCE: '/test/user'
-          DATA: "{ name: 'Rafael Neves', age: 41 }"
+          DATA: "'{ name: 'Rafael Neves', age: 41 }'"
           OPERATION: set
       - name: test get
         uses: rafacolab/realtime-db-action@v1.0.0

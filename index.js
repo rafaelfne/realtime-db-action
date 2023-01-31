@@ -6,8 +6,10 @@ try {
     const credential = JSON.parse(core.getInput('CREDENTIAL'));
     const databaseURL = core.getInput('DATABASE_DEFAULT_URL');
     const reference = core.getInput('REFERENCE');
-    const data = core.getInput('DATA');
+    const data = JSON.parse(core.getInput('DATA'));
     const operation = core.getInput('OPERATION');
+
+    core.info(credential);
 
     const app = admin.initializeApp({
         credential,
