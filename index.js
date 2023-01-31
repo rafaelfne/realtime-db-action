@@ -3,7 +3,7 @@ const core = require('@actions/core');
 const github = require('@actions/github');
 
 try {
-    const credential = core.getInput('CREDENTIAL');
+    const credential = JSON.parse(core.getInput('CREDENTIAL'));
     const databaseURL = core.getInput('DATABASE_DEFAULT_URL');
     const reference = core.getInput('REFERENCE');
     const data = core.getInput('DATA');

@@ -1,0 +1,16 @@
+name: Test Realtime Firebase
+on:
+  push:
+    branches:
+      - main
+jobs:
+  test:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: test set
+        uses: rafacolab/realtime-db-action@v1.0.0
+        with:
+          CREDENTIAL: ${{ secrets.CREDENTIAL_TEST }}
+          REFERENCE: '/test/user'
+          DATA: "{ name: 'Rafael Neves', age: 41 }"
+          OPERATION: set
