@@ -12,7 +12,7 @@ try {
     const project_id = core.getInput('PROJECT_ID');
     const private_key = core.getInput('PRIVATE_KEY');
     const private_key_id = core.getInput('PRIVATE_KEY_ID'); 
-    const client_email = cored.getInput('CLIENT_EMAIL');
+    const client_email = core.getInput('CLIENT_EMAIL');
     const client_id = core.getInput('CLIENT_ID');
     const auth_uri = core.getInput('AUTH_URI');
     const token_uri = core.getInput('TOKEN_URI');
