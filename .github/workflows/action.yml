@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: test set
-        uses: rafacolab/realtime-db-action@v1.0.2
+        uses: rafacolab/realtime-db-action@v1.0.3
         with:
           PROJECT_ID: "kodizn"
           PRIVATE_KEY_ID: "257299d5d3bc3226b38471891f2d8c75c8895d28"
@@ -23,7 +23,7 @@ jobs:
           DATA: "{ \"name\": \"Rafael Neves\", \"age\": 41 }"
           OPERATION: set
       - name: test get
-        uses: rafacolab/realtime-db-action@v1.0.2
+        uses: rafacolab/realtime-db-action@v1.0.3
         with:
           PROJECT_ID: "kodizn"
           PRIVATE_KEY_ID: "257299d5d3bc3226b38471891f2d8c75c8895d28"
