@@ -4,20 +4,20 @@ const github = require('@actions/github');
 
 try {
     // const credential = JSON.parse(core.getInput('CREDENTIAL'));
-    const databaseURL = core.getInput('DATABASE_DEFAULT_URL');
-    const reference = core.getInput('REFERENCE');
-    const data = JSON.parse(core.getInput('DATA'));
-    const operation = core.getInput('OPERATION');
+    const databaseURL = core.getInput('database_default_url');
+    const reference = core.getInput('reference');
+    const data = JSON.parse(core.getInput('data'));
+    const operation = core.getInput('operation');
 
-    const project_id = core.getInput('PROJECT_ID');
-    const private_key = core.getInput('PRIVATE_KEY');
-    const private_key_id = core.getInput('PRIVATE_KEY_ID'); 
-    const client_email = core.getInput('CLIENT_EMAIL');
-    const client_id = core.getInput('CLIENT_ID');
-    const auth_uri = core.getInput('AUTH_URI');
-    const token_uri = core.getInput('TOKEN_URI');
-    const auth_provider_x509_cert_url = core.getInput('AUTH_PROVIDER_X509_CERT_URL');
-    const client_x509_cert_url = core.getInput('CLIENT_X509_CERT_URL');
+    const project_id = core.getInput('project_id');
+    const private_key = core.getInput('private_key');
+    const private_key_id = core.getInput('private_key_id'); 
+    const client_email = core.getInput('client_email');
+    const client_id = core.getInput('client_id');
+    const auth_uri = core.getInput('auth_uri');
+    const token_uri = core.getInput('token_uri');
+    const auth_provider_x509_cert_url = core.getInput('auth_provider_x509_cert_url');
+    const client_x509_cert_url = core.getInput('client_x509_cert_url');
 
     core.debug(private_key);
 

@@ -1,46 +1,46 @@
 name: 'Realtime DB Action'
 description: 'Connect as admin and execute commands in firebase realtime database'
 inputs:
-  PROJECT_ID:
+  project_id:
     description: 'Project id'
     required: true
-  PRIVATE_KEY_ID:
+  private_key_id:
     description: 'Private Key Id'
     required: true
-  PRIVATE_KEY:
+  private_key:
     description: 'Private Key'
     required: true
-  CLIENT_EMAIL:
+  client_email:
     description: 'Client Email'
     required: true
-  CLIENT_ID:
+  client_id:
     description: 'Client Id'
     required: true
-  AUTH_URI:
+  auth_uri:
     description: 'Auth URI'
     required: true
-  TOKEN_URI:
+  token_uri:
     description: 'Token URI'
     required: true
-  AUTH_PROVIDER_X509_CERT_URL:
+  auth_provider_x509_cert_url:
     description: 'Auth Provider x509 Cert URL'
     required: true
-  CLIENT_X509_CERT_URL:
+  client_x509_cert_url:
     description: 'Client x509 Cert URL'
     required: true
-  DATABASE_DEFAULT_URL:
+  database_default_url:
     description: 'URL to connect in default database'
     required: true
-  REFERENCE:
+  reference:
     description: 'Reference to access in database'
     required: true
-  OPERATION:
+  operation:
     description: 'The operation to be performed, which can be get or set'
     required: true
-  DATA:
+  data:
     description: 'New data that will be used to update the reference'
 outputs:
-  RESULT:
+  result:
     description: 'Result from get operation execution'
 runs:
   using: 'node16'
