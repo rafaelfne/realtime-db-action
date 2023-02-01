@@ -20,7 +20,7 @@ try {
     const client_x509_cert_url = core.getInput('CLIENT_X509_CERT_URL');
 
     const app = admin.initializeApp({
-        credential: {
+        credential: admin.credential.cert({
             type: 'service_account',
             project_id,
             private_key,
@@ -31,7 +31,7 @@ try {
             token_uri,
             auth_provider_x509_cert_url,
             client_x509_cert_url
-        },
+        }),
         databaseURL
     });
     
