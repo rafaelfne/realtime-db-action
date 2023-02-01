@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: test set
-        uses: rafacolab/realtime-db-action@v1.0.6
+        uses: rafacolab/realtime-db-action@v1.0.7
         with:
           project_id: "kodizn"
           private_key_id: "257299d5d3bc3226b38471891f2d8c75c8895d28"
@@ -24,7 +24,7 @@ jobs:
           operation: set
           database_default_url: "https://kodizn-default-rtdb.firebaseio.com"
       - name: test get
-        uses: rafacolab/realtime-db-action@v1.0.6
+        uses: rafacolab/realtime-db-action@v1.0.7
         id: testGet
         with:
           project_id: "kodizn"

@@ -42,12 +42,21 @@ try {
     if (operation === 'get') {
         database.ref(reference).once('value')
         .then((value) => {
-            core.setOutput('RESULT', value.toJSON());
-        });
+            core.setOutput('result', value.toJSON());
+        })
+        .catch((reason) => {
+            core.setOutput('result', JSON.stringify(reason, undefined, 2));
+        });;
     }
 
     if (operation === 'set') {
-        database.ref(reference).set(data);
+        database.ref(reference).set(data)
+        .then(() => {
+            core.setOutput('result', 'set data was succesfull');
+        })
+        .catch((reason) => {
+            core.setOutput('result', JSON.stringify(reason, undefined, 2));
+        });
     }
 
     const payload = JSON.stringify(github.context.payload, undefined, 2);
