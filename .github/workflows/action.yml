@@ -20,7 +20,7 @@ jobs:
           AUTH_PROVIDER_X509_CERT_URL: "https://www.googleapis.com/oauth2/v1/certs"
           CLIENT_X509_CERT_URL: "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-837nd%40kodizn.iam.gserviceaccount.com"
           REFERENCE: '/test/user'
-          DATA: "'{ name: 'Rafael Neves', age: 41 }'"
+          DATA: "{ name: 'Rafael Neves', age: 41 }"
           OPERATION: set
       - name: test get
         uses: rafacolab/realtime-db-action@v1.0.1
