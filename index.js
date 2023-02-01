@@ -19,6 +19,8 @@ try {
     const auth_provider_x509_cert_url = core.getInput('AUTH_PROVIDER_X509_CERT_URL');
     const client_x509_cert_url = core.getInput('CLIENT_X509_CERT_URL');
 
+    core.debug(private_key);
+
     const app = admin.initializeApp({
         credential: admin.credential.cert({
             type: 'service_account',
