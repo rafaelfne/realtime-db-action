@@ -42,7 +42,7 @@ try {
     if (operation === 'get') {
         database.ref(reference).once('value')
         .then((value) => {
-            core.setOutput('result', JSON.stringify(value.toJSON()));
+            core.setOutput('result', JSON.stringify(value.val()));
         })
         .catch((reason) => {
             core.setOutput('result', reason);

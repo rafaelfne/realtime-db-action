@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: test get
-        uses: rafacolab/realtime-db-action@v1.0.9
+        uses: rafacolab/realtime-db-action@v1.0.10
         id: testGet
         with:
           project_id: "kodizn"
@@ -26,7 +26,7 @@ jobs:
       - name: Get the output time
         run: echo "The time was ${{ steps.testGet.outputs.RESULT }}"
       - name: test set
-        uses: rafacolab/realtime-db-action@v1.0.9
+        uses: rafacolab/realtime-db-action@v1.0.10
         with:
           project_id: "kodizn"
           private_key_id: "257299d5d3bc3226b38471891f2d8c75c8895d28"
