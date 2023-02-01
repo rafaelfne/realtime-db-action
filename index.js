@@ -45,7 +45,7 @@ try {
             core.setOutput('result', JSON.stringify(value.toJSON()));
         })
         .catch((reason) => {
-            core.setOutput('result', JSON.stringify(reason, undefined, 2));
+            core.setOutput('result', reason);
         });;
     }
 
@@ -55,7 +55,7 @@ try {
             core.setOutput('result', 'set data was succesfull');
         })
         .catch((reason) => {
-            core.setOutput('result', JSON.stringify(reason, undefined, 2));
+            core.setOutput('result', reason);
         });
     }
 
