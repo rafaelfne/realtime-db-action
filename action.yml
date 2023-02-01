@@ -1,8 +1,32 @@
 name: 'Realtime DB Action'
 description: 'Connect as admin and execute commands in firebase realtime database'
 inputs:
-  CREDENTIAL:
-    description: 'JSON with service account configuration'
+  PROJECT_ID:
+    description: 'Project id'
+    required: true
+  PRIVATE_KEY_ID:
+    description: 'Private Key Id'
+    required: true
+  PRIVATE_KEY:
+    description: 'Private Key'
+    required: true
+  CLIENT_EMAIL:
+    description: 'Client Email'
+    required: true
+  CLIENT_ID:
+    description: 'Client Id'
+    required: true
+  AUTH_URI:
+    description: 'Auth URI'
+    required: true
+  TOKEN_URI:
+    description: 'Token URI'
+    required: true
+  AUTH_PROVIDER_X509_CERT_URL:
+    description: 'Auth Provider x509 Cert URL'
+    required: true
+  CLIENT_X509_CERT_URL:
+    description: 'Client x509 Cert URL'
     required: true
   DATABASE_DEFAULT_URL:
     description: 'URL to connect in default database'

@@ -10,13 +10,29 @@ jobs:
       - name: test set
         uses: rafacolab/realtime-db-action@v1.0.0
         with:
-          CREDENTIAL: '${{ secrets.CREDENTIAL_TEST }}'
+          PROJECT_ID: "kodizn"
+          PRIVATE_KEY_ID: "257299d5d3bc3226b38471891f2d8c75c8895d28"
+          PRIVATE_KEY: ${{secrets.PRIVATE_KEY_TEST}}
+          CLIENT_EMAIL: "firebase-adminsdk-837nd@kodizn.iam.gserviceaccount.com"
+          CLIENT_ID: "115581378269331779838"
+          AUTH_URI: "https://accounts.google.com/o/oauth2/auth"
+          TOKEN_URI: "https://oauth2.googleapis.com/token"
+          AUTH_PROVIDER_X509_CERT_URL: "https://www.googleapis.com/oauth2/v1/certs"
+          CLIENT_X509_CERT_URL: "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-837nd%40kodizn.iam.gserviceaccount.com"
           REFERENCE: '/test/user'
           DATA: "'{ name: 'Rafael Neves', age: 41 }'"
           OPERATION: set
       - name: test get
         uses: rafacolab/realtime-db-action@v1.0.0
         with:
-          CREDENTIAL: '${{ secrets.CREDENTIAL_TEST }}'
+          PROJECT_ID: "kodizn"
+          PRIVATE_KEY_ID: "257299d5d3bc3226b38471891f2d8c75c8895d28"
+          PRIVATE_KEY: ${{secrets.PRIVATE_KEY_TEST}}
+          CLIENT_EMAIL: "firebase-adminsdk-837nd@kodizn.iam.gserviceaccount.com"
+          CLIENT_ID: "115581378269331779838"
+          AUTH_URI: "https://accounts.google.com/o/oauth2/auth"
+          TOKEN_URI: "https://oauth2.googleapis.com/token"
+          AUTH_PROVIDER_X509_CERT_URL: "https://www.googleapis.com/oauth2/v1/certs"
+          CLIENT_X509_CERT_URL: "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-837nd%40kodizn.iam.gserviceaccount.com"
           REFERENCE: '/test/user'
           OPERATION: get
