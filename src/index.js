@@ -1,4 +1,5 @@
 const core = require('@actions/core');
+const exec = require('./exec');
 
 const databaseURL = core.getInput('database_default_url');
 const reference = core.getInput('reference');
