@@ -44,6 +44,6 @@ outputs:
     description: 'Result from get operation execution'
 runs:
   using: 'node16'
-  main: 'index.js'
+  main: 'src/index.js'
     
   

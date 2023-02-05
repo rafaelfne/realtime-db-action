@@ -24,7 +24,7 @@ jobs:
           operation: get
           database_default_url: "https://kodizn-default-rtdb.firebaseio.com"
       - name: Get the output time
-        run: echo "The time was ${{ steps.testGet.outputs.RESULT }}"
+        run: echo "De object result is ${{ steps.testGet.outputs.RESULT }}"
       - name: test set
         uses: rafacolab/realtime-db-action@v1.0.10
         with:
@@ -38,6 +38,6 @@ jobs:
           auth_provider_x509_cert_url: "https://www.googleapis.com/oauth2/v1/certs"
           client_x509_cert_url: "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-837nd%40kodizn.iam.gserviceaccount.com"
           reference: '/test/user'
-          DATA: "{ \"name\": \"Rafael Neves\", \"age\": 41 }"
+          data: "{ \"name\": \"Rafael de França Neves\", \"age\": 41 }"
           operation: set
           database_default_url: "https://kodizn-default-rtdb.firebaseio.com"
