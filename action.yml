@@ -41,7 +41,7 @@ inputs:
     description: 'New data that will be used to update the reference'
 outputs:
   result:
-    description: 'Result from get operation execution'
+    description: 'Result data from get operation execution'
 runs:
   using: 'node16'
   main: 'src/index.js'
