@@ -23,7 +23,7 @@ jobs:
           reference: '/test/user'
           operation: get
           database_default_url: "https://kodizn-default-rtdb.firebaseio.com"
-      - name: Get the output time
+      - name: Get the output
         run: echo "De object result is ${{ steps.testGet.outputs.RESULT }}"
       - name: test set
         uses: rafacolab/realtime-db-action@v1.0.12
