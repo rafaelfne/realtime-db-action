@@ -1,5 +1,6 @@
 name: 'Realtime DB Action'
 description: 'Connect as admin and execute commands in firebase realtime database'
+icon: database
 inputs:
   project_id:
     description: 'Project id'
