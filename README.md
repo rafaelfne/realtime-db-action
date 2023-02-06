@@ -15,6 +15,8 @@ There you also get the URL of your database.
 > **Remembering that this configuration will turn your action into admin of your project, so save your service account settings in secrets to keep your project safe.**
 
 ```yml
+
+
   project_id:
     description: 'Project id'
     required: true
@@ -54,3 +56,24 @@ There you also get the URL of your database.
   data:
     description: 'New data that will be used to update the reference'
 ```
+
+You can find a config example [here](https://github.com/rafacolab/realtime-db-action/blob/main/.github/workflows/action.yml)
+
+### Output
+
+```yml
+result:
+    description: 'Result data from get operation execution'
+```
+
+## Third Party Licenses
+
+This GitHub Action uses a couple of Node.js modules to work.
+
+License and other copyright information for each module are included in the release branch of each action version under `node_modules/{module}`.
+
+More information for each package can be found at `https://www.npmjs.com/package/{package}`
+
+## License
+
+[![MIT license](https://camo.githubusercontent.com/5fab2edf3816ef9fb3ebcaf6e613fa7b40ff7652ec69e5f6e7f695aa24bf5ce6/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c6963656e73652d4d49542d626c75652e737667)](https://lbesson.mit-license.org/)
