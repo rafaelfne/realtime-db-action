@@ -1,6 +1,9 @@
 name: 'Realtime DB Action'
 description: 'Connect as admin and execute commands in firebase realtime database'
-icon: database
+author: 'Rafael Neves'
+branding:
+  icon: database
+  color: blue
 inputs:
   project_id:
     description: 'Project id'
